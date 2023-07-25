@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Calculator By Jp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" href = 
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwOC41ls1t52poCnJL488mPh22CbrF7ySkQ&usqp=CAU" 
+        type = "image/x-icon">
+</head>
+<body>
+    <script defer src="./app.js" > </script>
+    <div class="full">
+        <h1 class="d-flex">🤑 Amazon Review Calculator / એમેઝોન રિવ્યુ કેલ્ક્યુલેટર 🤑</h1>
+        <div class="d-flex">
+        <p>Enter the number of ratings for each star  /  <b>  દરેક સ્ટાર માટેની રેટિંગની સંખ્યા દાખલ કરો ✍ </b> :</p>
+        </div>
+        <div class="d-flex"> 
+        <label for="five-star">5 star:</label>
+        <input type="number" id="five-star" min="0" step="0.1">
+        </div>
+        <br>
+        <div class="d-flex"> 
+        <label for="four-star">4 star:</label>
+        <input type="number" id="four-star" min="0" step="0.1">
+        </div>
+        <br>
+        <div class="d-flex"> 
+        <label for="three-star">3 star:</label>
+        <input type="number" id="three-star" min="0" step="0.1">
+        </div>
+        <br>
+        <div class="d-flex"> 
+        <label for="two-star">2 star:</label>
+        <input type="number" id="two-star" min="0" step="0.1">
+        </div>
+        <br>
+        <div class="d-flex"> 
+        <label for="one-star">1 star:</label>
+        <input type="number" id="one-star" min="0" step="0.1">
+        </div>
+        <br>
+
+        <div class="d-flex">
+
+        <p>The average rating is / <b> અત્યાર ના રેટિંગ </b> :</p>
+        <p id="average-rating"></p>
+        </div>
+        <div class="d-flex">
+            <p>Enter your desired average review / <b> જેટલા રેટિંગ કરવા હોઈ એની સંખ્યા નાખો 😁 </b> : </p>
+        </div>
+        <div class="d-flex">
+            <input type="number" id="desired-average" min="1" max="5" step="0.1">
+            <button onclick="calculate()">Calculate</button>
+        </div>
+        <div class="d-flex">
+            <p>The number of 5-star ratings needed to achieve your desired average review is /<b> એટલા રેટિંગ પડાવવા પડશે  😎</b>:</p>
+            <p id="result"></p>
+        </div>
+    </div>
+    <div class="gradient"></div>
+    <footer>
+    <div class="forfooter" style="background-color: rgba(0, 0, 0, 0.2);">
+        ItsJp © 2023 All Rights Reserved. ( Made by ILLUMINATI👽 )
+    </div>
+    </footer>
+</body>
+
+</html>
